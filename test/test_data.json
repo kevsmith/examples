@@ -1,0 +1,18 @@
+[
+    {
+        "integers": {
+            "values": [
+                1,
+                2
+            ],
+            "expected": 3
+        },
+        "floats": {
+            "values": [
+                1.0,
+                2.5
+            ],
+            "expected": 3
+        }
+    }
+]
