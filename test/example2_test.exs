@@ -13,5 +13,6 @@ defmodule Example2Test do
 
   test "nested lists" do
     assert [1, 1, 2, 3, 4, 5, 6] = Example2.flatten([1, [1, 2, [3, [4], [5, 6]]]])
+    assert [1, 2, 3, 4, 5, 6] = Example2.flatten([1, [2, [3, 4], 5, [6]]])
   end
 end
