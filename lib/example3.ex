@@ -12,9 +12,4 @@ defmodule Examples.Example3 do
   def reduce_em(data) do
     Enum.reduce(data, %{}, &Map.update(&2, &1, 1, fn x -> x + 1 end))
   end
-
-  def group_em(data) do
-    Enum.group_by(data, & &1, & &1)
-    |> Enum.reduce(%{}, fn {key, values}, acc -> Map.put(acc, key, length(values)) end)
-  end
 end
